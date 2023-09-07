@@ -1,0 +1,48 @@
+---
+import type { CardItem } from "../types/types";
+import CardsView from "./CardsView/CardsView";
+
+const cards: CardItem[]  = [
+    { title: "SpaceShip", image: "/assets/nasa_habitat.png", description: "A great view of a Nasa space" },
+    { title: "Nasa House", image: "/assets/nasa_earth.jpg", description: "A Classic couzy nasa space home" },
+    { title: "Mars", image: "/assets/nasa_mars.jpg", description: "The red planet is making its presence" },
+]
+
+---
+
+<section>
+    <div class="trailer">
+        <img src="/assets/nasa_sky.jpg" alt="">
+    </div>
+    <div class="description">
+        <strong>Inspiration Beyond Our World</strong>
+        Since its inception in 1958, NASA has been a beacon for innovation, exploration, and discovery. From landing the first humans on the Moon to capturing the distant whispers of far-off galaxies, NASA's missions continuously push the boundaries of what's known. We aim to not only uncover the mysteries of our universe but to also inspire the next generation of scientists, dreamers, and explorers. Join us on this never-ending journey beyond our blue planet.
+    </div>
+    <div class="cardsContainer">
+        <CardsView cards={cards} client:load/>
+    </div>
+</section>
+
+<style>
+    section {
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        overflow: hidden;
+    }
+
+    .trailer {
+        margin-top: 300px;
+        margin-bottom: 50px;
+    }
+
+    .description {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>

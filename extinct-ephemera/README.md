@@ -52,3 +52,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## 😎 To add more functionalty in Astro
+
+If you want to add functionality from react your use this command
+`npx astro add react`
